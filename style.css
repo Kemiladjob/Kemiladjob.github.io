@@ -1,49 +1,45 @@
-body {
-    font-family: helvetica, Arial, sans-serif;
-    margin: 0px;
-    font-size: 1.5vw;
+.image-container {
+    position: relative;
+    display: inline-block
 }
 
-#logo {
-    margin: 0px;
-    padding: 0px;
-    font-family: "Fredoka One";
-    width: 20%;
+.image-container {
+    position: relative;
+    display: inline-block;
 }
 
-ul {
-    margin: 0px;
+.image-container img {
+    display: block; 
+    width: 100%; 
+    height: auto; 
 }
 
-body > header {
-    background-color: orange;
-    color: white;
-    display: flex;
-    height: 8vh;
-    align-items: center;
-    justify-content: space-around;
-}
-
-#nav-ul {
-    display: flex;
+.text-overlay {
+    position: absolute;
+    top: 95%; 
+    left: 30%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 60px; 
+    padding: 1px;
+    text-align: left;
 }
 
 #nav-ul > li{
-    padding: 8px;
-    margin: 16px;
-}
-
-body > header > nav > ul {
+    padding: 1px;
+    margin: 7px;
     list-style: none;
     text-decoration: none;
 }
 
+body {
+    margin: 0px;
+}
+
 .navbutton {
     color: white;
-    text-decoration: none;
-    padding: 12px;
-    border: 1px solid whitesmoke;
-    border-radius: 20%;
+    justify-content: space-between;
+    display: flex;
 }
 
 body > main article {
@@ -51,21 +47,16 @@ body > main article {
     margin: auto;
 }
 
-#main-content{
+.gallery {
+    display: grid;
+    place-items: center;
+}
+
+body > header > div {
+    background-color: orange;
+    color: white;
+    align-items: center;
     display: flex;
-    justify-content: space-around 70%;
-}
-
-#main-content > div {
-    width: 70%
-}
-form {
-    text-align: center;
-}
-
-h2 {
-    text-align: center;
-    
 }
 
 body > footer {
@@ -73,23 +64,37 @@ body > footer {
     display: flex;
 }
 
+h2 {
+    text-align: center;
+    color: orange;
+}
+
 body > footer > h2 {
     margin: 0px;
+}
+
+#main-content{
+    display: flex;
+    justify-content: space-around 20%;
+}
+
+#main-content > div {
+    width: 70%
 }
 
 #footer-ul {
     display: flex;
     list-style: none;
-}
-
-#footer-ul > div > li {
-    margin-left: 12px;
-}
-img {
-    border-radius: 50%;
-}
-
-#footer-ul > div > li > a{
-    text-decoration: none;
     color: white;
+}
+
+#footer-ul > li {
+    margin-left: 12px;
+    text-decoration: none;
+}
+
+
+#Lowerlogo {
+    color: white;
+   font-style: helvetica;
 }
